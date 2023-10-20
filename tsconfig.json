@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "target": "ES2022",
+      "lib": ["es2017", "esnext.asynciterable"],
+      "typeRoots": ["node_modules/@types"],
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "pretty": true,
+      "sourceMap": true,
+      "declaration": true,
+      "outDir": "dist",
+      "allowJs": true,
+      "noEmit": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "baseUrl": "src",
+      "paths": {
+          "@controllers": ["controllers"],
+          "@middlewares": ["middlewares"],
+          "@providers": ["providers"],
+          "@routes": ["routes"],
+          "@services": ["services"],
+          "@utils": ["utils"],
+          "@dtos": ["dtos"],
+          "@validations": ["validations"],
+          "@interfaces": ["interfaces"],
+          "@exceptions": ["exceptions"]
+      }
+  },
+  "include": ["src/**/*.ts"]
+}
